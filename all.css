@@ -37,8 +37,13 @@ article {
     margin-bottom: 4rem;
 }
 
-article img {
+article > div > figure > a > img {
     width: 44ch;
+    transition: transform 0.2s;
+}
+
+article > div > figure > a > img:hover {
+    transform: scale(1.05);
 }
 
 article > div > div > figure > div {
@@ -96,6 +101,10 @@ li {
     margin-bottom: 1.2rem;
     position: relative;
     z-index: 100;
+}
+
+a:hover {
+    color: #eb6440;
 }
 
 address {
