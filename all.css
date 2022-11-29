@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    color: #eff5f5;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #497174;
+    padding: 1.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2.4rem;
+    margin-left: 2.4rem;
+}
+
+section {
+    margin-bottom: 2.6rem;
+}
+
+section > ul {
+    margin-left: 1.2rem;
+}
+
+section > ul > li > ul {
+    margin-left: 1.2rem;
+}
+
+section > ul > li > ul > li {
+    list-style: circle;
+}
+
+img {
+    position: relative;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.4rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h1,
+h2 {
+    color: #eb6440;
+    position: relative;
+    z-index: 100;
+}
+
+p {
+    margin-top: 1.2rem;
+    position: relative;
+    z-index: 100;
+}
+
+strong {
+    color: #d6e4e5;
+    position: relative;
+    z-index: 100;
+}
+
+li {
+    margin-top: 1.2rem;
+    position: relative;
+    z-index: 100;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+#greet {
+    font-size: 2.6rem;
+    display: block;
+    margin: 1.6rem 0;
+    position: relative;
+    z-index: 100;
+}
+
+.profile-picture {
+    width: 6ch;
+    height: 6ch;
+    border-radius: 6ch;
+    position: relative;
+    z-index: 100;
+}
+
+.shape1 {
+    width: 600px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid #eb6440;
+    transform: rotate(60deg);
+    position: fixed;
+    right: -175px;
+    top: -100px;
+    z-index: 90;
+}
+
+.shape2 {
+    width: 600px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid gray;
+    transform: rotate(20deg);
+    position: fixed;
+    left: -300px;
+    bottom: -250px;
+    z-index: 90;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 1.2rem 4rem;
+    }
+
+    .profile-section {
+        display: flex;
+        gap: 50px;
+    }
+
+    #greet {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding: 1.2rem 12rem;
+    }
+
+    .profile-section {
+        display: flex;
+        gap: 50px;
+    }
+
+    #greet {
+        margin-top: 0;
+    }
+}
