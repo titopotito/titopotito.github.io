@@ -12,14 +12,6 @@ body {
     padding: 1.2rem;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: 2.4rem;
-    margin-left: 2.4rem;
-}
-
 section {
     margin-bottom: 2.6rem;
 }
@@ -41,12 +33,45 @@ img {
     z-index: 100;
 }
 
+article {
+    margin-bottom: 4rem;
+}
+
+article img {
+    width: 44ch;
+}
+
+article > div > div > figure > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+article > div > div > figure {
+    margin-top: 1.4rem;
+}
+
+article > div > div > figure > div > img {
+    width: 10ch;
+    margin-top: 1.4rem;
+}
+
+article > div > figure > img,
+article > div > div > p {
+    margin-bottom: 1.4rem;
+}
+
+h3 {
+    margin-bottom: 1.4rem;
+}
+
 h1 {
     font-size: 2.6rem;
     margin-bottom: 1.4rem;
 }
 h2 {
     font-size: 1.8rem;
+    margin-bottom: 1.4rem;
 }
 h1,
 h2 {
@@ -56,7 +81,7 @@ h2 {
 }
 
 p {
-    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     position: relative;
     z-index: 100;
 }
@@ -68,7 +93,7 @@ strong {
 }
 
 li {
-    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     position: relative;
     z-index: 100;
 }
@@ -126,27 +151,33 @@ address {
         padding: 1.2rem 4rem;
     }
 
+    section {
+        padding: 0 5rem;
+    }
+
     .profile-section {
         display: flex;
         gap: 50px;
+        padding: 0;
     }
 
     #greet {
         margin-top: 0;
+    }
+
+    article > div {
+        display: flex;
+        gap: 50px;
+    }
+
+    footer > h2,
+    footer > address {
+        padding: 0 5rem;
     }
 }
 
 @media (min-width: 1200px) {
     body {
         padding: 1.2rem 12rem;
-    }
-
-    .profile-section {
-        display: flex;
-        gap: 50px;
-    }
-
-    #greet {
-        margin-top: 0;
     }
 }
